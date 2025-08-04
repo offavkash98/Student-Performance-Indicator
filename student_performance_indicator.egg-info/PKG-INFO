@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: student_performance_indicator
+Version: 0.0.1
+Author: Avkash_Khandekar
+Author-email: offavkash98@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: catboost
+Requires-Dist: xgboost
+Requires-Dist: Flask

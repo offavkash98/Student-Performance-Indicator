@@ -1,12 +1,14 @@
 ## End-to-End Machine Learning Project: Student Performance Indicator
 
-Project Presentation : https://drive.google.com/file/d/1VlOd5lpA2uahUHYxHAKq37sOOwJlQ7WL/view?usp=sharing
+     Project Presentation : https://drive.google.com/file/d/1VlOd5lpA2uahUHYxHAKq37sOOwJlQ7WL/view?usp=sharing
 
 ### Project Overview
 
-This project implements a comprehensive **end-to-end machine learning solution** focused on predicting student performance test scores. The aim is to understand how various factors such as gender, ethnicity, parental level of education, lunch, and test preparation courses affect student test scores. This project serves as a practical demonstration of **industry-standard best practices** in machine learning development, including **modular programming**, **object-oriented programming (OOP)**, and **Continuous Integration/Continuous Delivery (CI/CD)** pipeline implementation for deployment on **AWS Cloud**.
+This project builds a **production-ready**, end-to-end machine learning pipeline to predict student performance based on socio-demographic factors. It integrates best practices in modular **ML development**, **CI/CD deployment**, and cloud hosting on **AWS Elastic Beanstalk**.
 
 The dataset used consists of **1000 rows and 8 columns**, including both **categorical and numerical features**, and serves as a foundation for understanding complex data handling and model building.
+
+🎯 Goal: Predict students' test scores using features like gender, parental education, and test preparation course.
 
 ### 🔧 Tech Stack & Tools
 
@@ -27,7 +29,7 @@ The dataset used consists of **1000 rows and 8 columns**, including both **categ
 
 📁 Data Flow
 
-      *   raw.csv ──► train.csv & test.csv ──► preprocessor.pkl ──► model.pkl ──► predictions
+      raw.csv ──► train.csv & test.csv ──► preprocessor.pkl ──► model.pkl ──► predictions
       
 ### 📦 Modular Architecture
 
@@ -99,12 +101,11 @@ The dataset used consists of **1000 rows and 8 columns**, including both **categ
 | Robust Error Handling | ✅                                              |
 
 ### 📌 Key Learnings
-✅ End-to-end ML lifecycle
-✅ Modular, scalable, and production-ready design
-✅ AWS deployment & automation (CI/CD)
-✅ Real-world implementation of Flask for ML apps
+- ✅ End-to-end ML lifecycle
+- ✅ Modular, scalable, and production-ready design
+- ✅ AWS deployment & automation (CI/CD)
+- ✅ Real-world implementation of Flask for ML apps
 
 ### 🤝 Connect with Me
 📧 avkashkhandekar.mum.dbda@gmail.com
 📞 9082698210
-🌐 LinkedIn

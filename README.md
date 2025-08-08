@@ -68,7 +68,7 @@ The dataset used consists of **1000 rows and 8 columns**, including both **categ
 
 | Home Page                                                   | Prediction Output                                                   |
 | ----------------------------------------------------------- | ------------------------------------------------------------------- |
-| ![Home](D:\DS-Project\Student-Performance-Indicator\templates\Screenshot 2025-08-08 230734.png) | ![Result](D:\DS-Project\Student-Performance-Indicator\templates\Screenshot 2025-08-08 230803.png) |
+| ![Home](templates\Screenshot 2025-08-08 230734.png) | ![Result](templates\Screenshot 2025-08-08 230803.png) |
 
 
 ### 🧪 How to Run Locally

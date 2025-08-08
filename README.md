@@ -1,6 +1,6 @@
 ## End-to-End Machine Learning Project: Student Performance Indicator
 
-     Project Presentation : https://drive.google.com/file/d/1VlOd5lpA2uahUHYxHAKq37sOOwJlQ7WL/view?usp=sharing
+Project Presentation : https://drive.google.com/file/d/1VlOd5lpA2uahUHYxHAKq37sOOwJlQ7WL/view?usp=sharing
 
 ### Project Overview
 
@@ -107,5 +107,5 @@ The dataset used consists of **1000 rows and 8 columns**, including both **categ
 - ✅ Real-world implementation of Flask for ML apps
 
 ### 🤝 Connect with Me
-📧 avkashkhandekar.mum.dbda@gmail.com
-📞 9082698210
+- 📧 avkashkhandekar.mum.dbda@gmail.com
+- 📞 9082698210

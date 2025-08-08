@@ -1,5 +1,7 @@
 ## End-to-End Machine Learning Project: Student Performance Indicator
 
+Project Presentation : https://drive.google.com/file/d/1VlOd5lpA2uahUHYxHAKq37sOOwJlQ7WL/view?usp=sharing
+
 ### Project Overview
 
 This project implements a comprehensive **end-to-end machine learning solution** focused on predicting student performance test scores. The aim is to understand how various factors such as gender, ethnicity, parental level of education, lunch, and test preparation courses affect student test scores. This project serves as a practical demonstration of **industry-standard best practices** in machine learning development, including **modular programming**, **object-oriented programming (OOP)**, and **Continuous Integration/Continuous Delivery (CI/CD)** pipeline implementation for deployment on **AWS Cloud**.

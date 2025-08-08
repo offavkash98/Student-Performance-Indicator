@@ -1,13 +1,11 @@
-[ 2025-08-08 16:18:37,945 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+[ 2025-08-08 16:31:08,029 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.5:5000
-[ 2025-08-08 16:18:37,946 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
-[ 2025-08-08 16:22:26,771 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:22:26] "GET / HTTP/1.1" 200 -
-[ 2025-08-08 16:22:33,689 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:22:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-[ 2025-08-08 16:22:35,621 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:22:35] "[33mGET /predict HTTP/1.1[0m" 404 -
-[ 2025-08-08 16:23:34,886 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:23:34] "GET /predictdata HTTP/1.1" 200 -
-[ 2025-08-08 16:23:55,569 ] 838 app - ERROR - Exception on /predictdata [POST]
+[ 2025-08-08 16:31:08,030 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2025-08-08 16:31:09,369 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:31:09] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-08-08 16:31:12,709 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:31:12] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-08-08 16:31:31,652 ] 838 app - ERROR - Exception on /predictdata [POST]
 Traceback (most recent call last):
   File "D:\DS-Project\Student-Performance-Indicator\src\pipeline\predict_pipeline.py", line 13, in predict
     model_path=os.path.join("artifacts","model.pkl")
@@ -35,9 +33,10 @@ Traceback (most recent call last):
   File "D:\DS-Project\Student-Performance-Indicator\src\pipeline\predict_pipeline.py", line 24, in predict
     raise CustomException(e,sys)
 src.exception.CustomException: Error occured in python script name [D:\DS-Project\Student-Performance-Indicator\src\pipeline\predict_pipeline.py] line number [13] error message[name 'os' is not defined]
-[ 2025-08-08 16:23:55,602 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:23:55] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
-[ 2025-08-08 16:25:00,177 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:25:00] "GET /predictdata HTTP/1.1" 200 -
-[ 2025-08-08 16:25:21,669 ] 838 app - ERROR - Exception on /predictdata [POST]
+[ 2025-08-08 16:31:31,665 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:31:31] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2025-08-08 16:31:49,061 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:31:49] "GET / HTTP/1.1" 200 -
+[ 2025-08-08 16:31:54,699 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:31:54] "GET /predictdata HTTP/1.1" 200 -
+[ 2025-08-08 16:32:08,781 ] 838 app - ERROR - Exception on /predictdata [POST]
 Traceback (most recent call last):
   File "D:\DS-Project\Student-Performance-Indicator\src\pipeline\predict_pipeline.py", line 13, in predict
     model_path=os.path.join("artifacts","model.pkl")
@@ -65,4 +64,4 @@ Traceback (most recent call last):
   File "D:\DS-Project\Student-Performance-Indicator\src\pipeline\predict_pipeline.py", line 24, in predict
     raise CustomException(e,sys)
 src.exception.CustomException: Error occured in python script name [D:\DS-Project\Student-Performance-Indicator\src\pipeline\predict_pipeline.py] line number [13] error message[name 'os' is not defined]
-[ 2025-08-08 16:25:21,675 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:25:21] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2025-08-08 16:32:08,793 ] 97 werkzeug - INFO - 127.0.0.1 - - [08/Aug/2025 16:32:08] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -

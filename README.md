@@ -68,7 +68,7 @@ The dataset used consists of **1000 rows and 8 columns**, including both **categ
 
 | Home Page                                                   | Prediction Output                                                   |
 | ----------------------------------------------------------- | ------------------------------------------------------------------- |
-| ![Home]([templates\Screenshot 2025-08-08 230734.png](https://github.com/offavkash98/Student-Performance-Indicator/blob/main/templates/Screenshot%202025-08-08%20230734.png)) | ![Result](templates\Screenshot 2025-08-08 230803.png) |
+| ![Home]([templates\Screenshot 2025-08-08 230734.png](https://github.com/offavkash98/Student-Performance-Indicator/blob/main/templates/Screenshot%202025-08-08%20230734.png)) | ![Result](https://github.com/offavkash98/Student-Performance-Indicator/blob/main/templates/Screenshot%202025-08-08%20230803.png) |
 
 
 ### 🧪 How to Run Locally

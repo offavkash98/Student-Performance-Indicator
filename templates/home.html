@@ -41,63 +41,58 @@
             <div class="mb-3">
                 <label class="form-label">Gender</label>
                 <select class="form-select" name="gender" required>
-                    <option disabled selected value="">Select Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
+                    <option disabled value="">Select Gender</option>
+                    <option value="male" {% if gender == 'male' %}selected{% endif %}>Male</option>
+                    <option value="female" {% if gender == 'female' %}selected{% endif %}>Female</option>
                 </select>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Race or Ethnicity</label>
                 <select class="form-select" name="ethnicity" required>
-                    <option disabled selected value="">Select Ethnicity</option>
-                    <option value="group A">Group A</option>
-                    <option value="group B">Group B</option>
-                    <option value="group C">Group C</option>
-                    <option value="group D">Group D</option>
-                    <option value="group E">Group E</option>
+                    <option disabled value="">Select Ethnicity</option>
+                    {% for group in ['group A', 'group B', 'group C', 'group D', 'group E'] %}
+                    <option value="{{ group }}" {% if ethnicity == group %}selected{% endif %}>{{ group }}</option>
+                    {% endfor %}
                 </select>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Parental Level of Education</label>
                 <select class="form-select" name="parental_level_of_education" required>
-                    <option disabled selected value="">Select Education Level</option>
-                    <option value="associate's degree">Associate's Degree</option>
-                    <option value="bachelor's degree">Bachelor's Degree</option>
-                    <option value="high school">High School</option>
-                    <option value="master's degree">Master's Degree</option>
-                    <option value="some college">Some College</option>
-                    <option value="some high school">Some High School</option>
+                    <option disabled value="">Select Education Level</option>
+                    {% for level in ["associate's degree", "bachelor's degree", "high school", "master's degree", "some college", "some high school"] %}
+                    <option value="{{ level }}" {% if parental_level_of_education == level %}selected{% endif %}>{{ level.title() }}</option>
+                    {% endfor %}
                 </select>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Lunch Type</label>
                 <select class="form-select" name="lunch" required>
-                    <option disabled selected value="">Select Lunch Type</option>
-                    <option value="free/reduced">Free/Reduced</option>
-                    <option value="standard">Standard</option>
+                    <option disabled value="">Select Lunch Type</option>
+                    <option value="free/reduced" {% if lunch == 'free/reduced' %}selected{% endif %}>Free/Reduced</option>
+                    <option value="standard" {% if lunch == 'standard' %}selected{% endif %}>Standard</option>
                 </select>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Test Preparation Course</label>
                 <select class="form-select" name="test_preparation_course" required>
-                    <option disabled selected value="">Select Option</option>
-                    <option value="none">None</option>
-                    <option value="completed">Completed</option>
+                    <option disabled value="">Select Option</option>
+                    <option value="none" {% if test_preparation_course == 'none' %}selected{% endif %}>None</option>
+                    <option value="completed" {% if test_preparation_course == 'completed' %}selected{% endif %}>Completed</option>
                 </select>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Reading Score (out of 100)</label>
-                <input type="number" class="form-control" name="reading_score" placeholder="Enter Reading Score" min="0" max="100" required>
+                <input type="number" class="form-control" name="reading_score" placeholder="Enter Reading Score" min="0" max="100" value="{{ reading_score or '' }}" required>
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Writing Score (out of 100)</label>
-                <input type="number" class="form-control" name="writing_score" placeholder="Enter Writing Score" min="0" max="100" required>
+                <input type="number" class="form-control" name="writing_score" placeholder="Enter Writing Score" min="0" max="100" value="{{ writing_score or '' }}" required>
             </div>
 
             <div class="d-grid gap-2">
@@ -110,11 +105,13 @@
             <h5 class="text-center">📊 Predicted Maths Score: <strong>{{ results }}</strong></h5>
         </div>
         {% endif %}
+
+        <div class="footer mt-4 mb-3">
+        <p>Created with ❤️ by <strong>Avkash Khandekar</strong></p>
+        </div>
     </div>
 
-    <div class="footer">
-        <p>Created with ❤️ by <strong>Avkash Khandekar</strong></p>
-    </div>
+
 </div>
 
 </body>

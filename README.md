@@ -59,7 +59,7 @@ The dataset used consists of **1000 rows and 8 columns**, including both **categ
             └── README.md
             
 ###  🌐 Deployment Strategy (CI/CD)
-✅ GitHub → 📦 AWS CodePipeline → 🚀 AWS Elastic Beanstalk
+- ✅ GitHub → 📦 AWS CodePipeline → 🚀 AWS Elastic Beanstalk
 - Push to GitHub auto-triggers deployment
 - .ebextensions/python.config sets WSGI path
 - Fully managed production environment on AWS
